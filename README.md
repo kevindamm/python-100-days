@@ -17,9 +17,13 @@ does look really good in a lot of ways.
 But, I want to be sure, and I want to be able to fill in any gaps or answer any
 uncertainties for my brother during his journey learning Python. I'm going to
 watch the classes and attempt all of the exercises and use this repository to
-save and share my work. Maybe I'll also take away some neat new pieces for my
-portfolio, but I hope to also be able to help my brother and anyone else taking
-this course with learning how to code in Python.
+save and share my work.  Maybe I'll also take away some project pieces for my
+portfolio, but I hope also to be able to help my brother and anyone else taking
+this course with learning how to code in Python.  I won't be providing all of
+the course material, only my solutions to the exercises (as another data point
+to compare to the instructor's solution).  The quizzes so far have been good for
+making you think about the material, I highly recommend doing those and watching
+the videos if you're interested in the example solutions I'm providing here.
 
 _Please_, **PLEASE!** if you are taking this course do not simply copy my code,
 but work through the exercises on your own. Refer to this code when you get
