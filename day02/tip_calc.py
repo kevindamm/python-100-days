@@ -13,33 +13,37 @@ def main():
   tip_percent = read_tip_percent(DEFAULT_TIP_PERCENT)
   group_size = read_group_size(DEFAULT_GROUP_SIZE)
 
+  per_person, tip_amount = calculate_tip(subtotal, tip_percent, group_size)
+  per_person_string = "{:.2f}".format(per_person)
+  diff_string = "{:.2f}".format(tip_amount)
+  subtotal_string = "{:.2f}".format(per_person - tip_amount)
+
+  print(f"Each person should pay {per_person_string} "+
+        f"({subtotal_string} + {diff_string})")
+
+
+def calculate_tip(subtotal, tip_percent, group_size):
+  """Calculate the (per_person, tip) amounts from the provided parameters.
+
+  Parameters:
+    subtotal: the total of the bill before splitting it and adding tips
+    tip_percent: a [1-100] value indicating the amount to tip as a percentage
+    group_size: (int) how many people are in the party
+  
+  Returns:
+    (tuple) per_person, tip_amount
+  """
   adjustment = 1 + tip_percent/100
   total = subtotal * adjustment
 
-  # In these two variables, changing the type of the variable (float -> string)
-  # is possible in Python because it allows variables to change types, but many
-  # other languages would not allow this.  The feature is called dynamic typing.
-  # It can cause a lot of problems, especially if the variable would have
-  # different types depending on what path was taken through the code.. so it is
-  # usually better to avoid doing this, but also very safe here since the type
-  # is only briefly a numeric kind and there is no exposure of its numeric value 
-  # anywhere outside of this code block.
   per_person = total / group_size
   subtotal_per_person = subtotal / group_size
   diff = round(per_person - subtotal_per_person, 2)
 
-  per_person = "{:.2f}".format(per_person)
-  subtotal_per_person = "{:.2f}".format(subtotal_per_person)
+  return per_person, diff
 
-  # Something like this would be more appropriate, and would be possible to do
-  # without interleaving its numeric calculation into the above code, because
-  # we would still have the numeric values at this point..
-  # (instead, they've been clobbered).
-  diff_string = "{:.2f}".format(diff)
 
-  print(f"Each person should pay {per_person} "+
-        f"({subtotal_per_person} + {diff_string})")
-
+# TODO? factor out the common pattern of read-input-with-retry
 
 def read_subtotal():
   """Prompts the user for the bill's total amount and returns it as an int.
