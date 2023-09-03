@@ -40,24 +40,25 @@ two to three classes on it if it was presented in a Discrete Mathematics course.
 
 I love that the day's final exercise is a Choose Your Adventure story.  This is
 the kind of program that I wrote as a kid when first learning BASIC, though I
-tried to include some world design as well, it still consisted of a lot of if-
-then conditionals too.
+tried to include some world design as well, it still consisted of a lot of
+if-then conditionals too.
 
-I still have the notes I took down on paper from some of
+I still have the notes I took down on paper for some of
 those games I wrote, back then the Atari 800XL we had didn't have any storage
 (there were cassette drives so you could store data on tapes, but we didn't have
 one and I didn't even know they existed).  I took enough notes to be ready to
 type it all in.  Hours of data entry for a few minutes of entertainment.  Some
 programs broken up into multiple sessions because it used the one TV in the
-house, but at least there was a toggle switch for the antannae and the Atari.
-Then, after I'd played it and anyone else who wanted to, I turned off the power
-and the program was gone forever.  It was probably good for me, though, since I
-didn't develop any strong attachments to these first programs.  And hey I still
-have the notes if I really want a memento.
+house, but at least there was a toggle for switching between the antanna and the Atari.
+Then, after I'd played it and anyone else that wanted to, I turned off the power
+and the program was gone forever.  It was probably good, though, since I
+didn't develop any strong attachments to these first programs, I didn't develop
+strong attachments to the programs I wrote early in my career either.  And hey,
+I still have the notes if I really want a memento.
 
-Anyway, yeah, computing is different now.  There is some code out there that I
-wouldn't even bother showing someone, it got the job done and I only needed give
-the merest attention to it, it was just meant as a quick fix at first..
+Anyway, yeah, computing is different now.  There is some throwaway code out there that I
+wouldn't even show anyone, it got the job done and I needed only give
+barely enough attention to it, it was just meant as a quick fix at first..
 and some of that code will probably outlive me.
 
 I made the adventure game a little more interesting by building a map.  I didn't
@@ -69,11 +70,11 @@ Something that Python is missing, although the other facilities of Python make
 it possible to code up in about 120-150 lines, is a case-matching selection of
 some kind.  C and C++ have a rudimentary form of it, ML and Haskell have more
 sophisticated forms of it.  Javascript eventually got some flavor of it, but
-indirectly through their object-desugaring and array-desugaring semantics in the
-spread operator (added in EcmaSript 6).  You can hack it in Python manually with
+indirectly through the spread operator (added in EcmaSript 6).
+You can hack it into Python manually with
 a lot of if/elif/else, and if the flow chart is small enough or the types
-consistent enough, it is fine to do it that way, more efficient even.  But if
-you want any amount of extensibility to types that aren't defined within the
-scope of the matching logic, well, that takes some specialized code where in
+consistent enough, it is fine to do it that way, possibly more efficient.  But
+if you want any amount of extensibility to types that aren't defined within the
+scope of the matching logic, well, that takes some special-handling code where in
 other languages it comes built in.  But Python wins out in other ways,
 especially low visual clutter and a wide variety of libraries available.

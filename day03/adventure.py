@@ -126,7 +126,7 @@ def transition_office(direction):
     current_pos = (1, 2)
   
   else:
-    print("You attempt to keep a low profile while looking for an exit when out of nowhere appears a man in a grey trenchcoat, a fedora tipped low over their face.  \"You're coming with me,\" they said, as they reach their hand out towards you.  Just as you notice the taser held in their grasp, its electrods spark and you feel a strange tingling sensation in your side.  You look down just as your legs collapse under you, warmth spreading to your lower legs, as the world fades you hear another kzzt sound near your side.")
+    print("You attempt to keep a low profile while looking for an exit when out of nowhere appears a man in a grey trenchcoat, a fedora tipped low over their face.  \"You're coming with me,\" they say as they reach their hand out towards you.  Just as you notice the taser held in their grip, its electrods spark and you feel a strange tingling sensation in your side.  You look down just as your legs collapse under you, warmth spreading to your lower body, as the world fades you hear another kzzt sound near your side.")
     print()
     print("THE END")
     time.sleep(2)
